@@ -13,7 +13,7 @@ problem += 1 * lemonade <= 50  # Sugar
 problem += 1 * lemonade <= 30  # Lemon Juice
 problem += 2 * fruit_juice <= 40  # Fruit Puree
 
-problem.solve(PULP_CBC_CMD(msg=0)) # Solve the problem
+problem.solve() # Solve the problem
 
 print(f"Lemonade: {int(value(lemonade))} units")
 print(f"Fruit Juice: {int(value(fruit_juice))} units")
